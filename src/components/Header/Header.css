@@ -1,0 +1,249 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 15px 0;
+    box-shadow: 3px 3px 5px  rgb(197, 197, 197);
+    height: 50px;
+    z-index: 20000;
+}
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover{
+    border-bottom: 2px solid gold;
+    margin-top: 5px;
+    color: gold;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img{
+    display: flex;
+    
+}
+.nav >img{
+    max-width: 40px;
+    height: 40px;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-etim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+
+.menu{
+    display: none;
+}
+
+/* all1 */
+
+.all1{
+    display:none;
+    padding: 20px 0;
+    background-color:rgb(243, 242, 242);
+    margin-top: 10px;
+}
+.all3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.all2 >a{
+    font-size: 20px;
+}
+
+.hammasi{
+    display:none;
+    padding: 20px 0;
+    background-color:rgb(243, 242, 242);
+    margin-top: 10px;
+}
+.hammasi-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; 
+}
+.hammasi-row >img{
+    margin-left: 30%;
+    width: 30px;
+    height: 30px;
+}
+.hammasi-row >p{
+    font-size: 18px;
+}
+.hammasi-row:hover{
+    color: gold;
+
+}
+
+
+
+.hammasi1{
+    display:none;
+    padding: 20px 0;
+    background-color:rgb(243, 242, 242);
+    margin-top: 10px;
+}
+.hammasi-all1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 140px; 
+}
+.hammasi-row1 >img{
+    margin-left: 25%;
+    width: 30px;
+    height: 30px;
+}
+.hammasi-row1 >p{
+    font-size: 18px;
+    text-align: center;
+}
+.hammasi-row1:hover{
+    color: gold;
+
+}
+
+
+@media (max-width:990px){
+        .menu {
+            display:block;
+            margin-left: 45%;
+        }
+        .nav-link{
+            position: absolute;
+            top: 70px;
+            left: 0;    
+            width: 100%;
+            padding: 20px 0;
+            background: #f7f7f7;
+            box-shadow: 0 3px 5px #0002;
+            flex-direction: column;
+            gap: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .3s ease;
+            line-height: 2;
+            z-index: 10;
+            transform-origin: top;
+            transform: scaleY(0);
+           
+        }
+
+    .show{
+            transform: scaleY(1);
+        }
+
+        .hammasi-all{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px; 
+        }
+        .hammasi-all1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 80px; 
+        }
+
+
+    }
+
+
+    @media(max-width:400px){
+
+
+        .menu {
+            display:block;
+            margin-left: -505%;
+        }
+        nav{
+            display: flex;
+            justify-content:space-between ;
+            align-items: center;
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            justify-content: center;
+            padding: 0 20px;
+        }
+        .nav-link{
+            position: absolute;
+            top: 70px;
+            left: 0;    
+            width: 100%;
+            padding: 20px 0;
+            background: #f7f7f7;
+            box-shadow: 0 3px 5px #0002;
+            flex-direction: column;
+            gap: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .3s ease;
+            line-height: 2;
+            z-index: 10;
+            transform-origin: top;
+            transform: scaleY(0);
+           
+        }
+
+    .show{
+            transform: scaleY(1);
+        }
+
+        .hammasi-all{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px; 
+        }
+        .hammasi-all1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 80px; 
+            flex-direction: column;
+        }
+
+
+    }
